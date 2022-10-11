@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<odoo>
+    <template id="report_invoice_document_with_payments_din5008_much"
+              inherit_id="updater_account.report_invoice_document_din5008_much"
+              primary="True">
+        <xpath expr="//div[@id='total']/div/table" position="inside">
+            <t t-set="payments_vals"
+               t-value="o.sudo()._get_reconciled_info_JSON_values()"/>
+            <t t-foreach="payments_vals" t-as="payment_vals">
+                <tr>
+                    <td style="border-top:none !important;">
+                        <i class="oe_form_field text-right oe_payment_label">
+                            Paid on
+                            <t t-esc="payment_vals['date']"
+                               t-options="{&quot;widget&quot;: &quot;date&quot;}"/>
+                        </i>
+                    </td>
+                    <td class="text-right" style="border-top:none !important;">
+                        <span t-esc="payment_vals['amount']"
+                              t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: o.currency_id}"/>
+                    </td>
+                </tr>
+            </t>
+            <t t-if="len(payments_vals) &gt; 0">
+                <tr>
+                    <td
+                            t-att-style="'border-top:1px solid #e9ecef !important;' if o.company_id.much_layout_style in ['colorful','slick'] else 'border-top:1px solid #000000 !important;'">
+                        <strong id="amount_residual_label">Amount Due</strong>
+                    </td>
+                    <td class="text-right"
+                        t-att-style="'border-top:1px solid #e9ecef !important;' if o.company_id.much_layout_style in ['colorful','slick'] else 'border-top:1px solid #000000 !important;'">
+                        <span id="amount_residual" t-field="o.amount_residual"/>
+                    </td>
+                </tr>
+            </t>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="layout_much_din5008_much" model="report.layout">
+            <field name="name">DIN 5008 – much. dynamic</field>
+            <field name="view_id" ref="updater.external_layout_din5008_much"/>
+            <field name="pdf">/web/static/pdf/preview_standard.pdf</field>
+            <field name="image">/web/static/img/preview_standard.png</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,144 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* updater_purchase
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-03 09:17+0000\n"
+"PO-Revision-Date: 2022-10-03 09:17+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_din5008_much
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchasequotation_document_din5008_much
+msgid "<b>Shipping Address:</b>"
+msgstr ""
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_din5008_much
+msgid ""
+"<span>\n"
+"                                                    <strong>Total</strong>\n"
+"                                                </span>"
+msgstr ""
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_din5008_much
+msgid "<strong class=\"mr16\">Subtotal</strong>"
+msgstr ""
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_din5008_much
+msgid "<strong>Amount</strong>"
+msgstr ""
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_din5008_much
+msgid "<strong>Date Req.</strong>"
+msgstr ""
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_din5008_much
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchasequotation_document_din5008_much
+msgid "<strong>Description</strong>"
+msgstr ""
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchasequotation_document_din5008_much
+msgid "<strong>Expected Date</strong>"
+msgstr ""
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_din5008_much
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchasequotation_document_din5008_much
+msgid "<strong>Pos</strong>"
+msgstr ""
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_din5008_much
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchasequotation_document_din5008_much
+msgid "<strong>Quantity</strong>"
+msgstr ""
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_din5008_much
+msgid "<strong>Taxes</strong>"
+msgstr ""
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_din5008_much
+msgid "<strong>Unit Price</strong>"
+msgstr ""
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_din5008_much
+msgid "<strong>Untaxed Amount</strong>"
+msgstr ""
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_din5008_much
+msgid "Cancelled Purchase Order"
+msgstr ""
+
+#. module: updater_purchase
+#: code:addons/updater_purchase/models/purchase_order.py:0
+#: model:ir.model.fields,field_description:updater_purchase.field_purchase_order__report_header_text
+#, python-format
+msgid "Description before Table"
+msgstr ""
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_din5008_much
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchasequotation_document_din5008_much
+msgid "Order Date"
+msgstr ""
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_din5008_much
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchasequotation_document_din5008_much
+msgid "Order Reference"
+msgstr ""
+
+#. module: updater_purchase
+#: model:ir.model,name:updater_purchase.model_purchase_order
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_din5008_much
+msgid "Purchase Order"
+msgstr ""
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_din5008_much
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchasequotation_document_din5008_much
+msgid "Purchase Order No."
+msgstr ""
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_din5008_much
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchasequotation_document_din5008_much
+msgid "Purchase Representative"
+msgstr ""
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_din5008_much
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchasequotation_document_din5008_much
+msgid "Request for Quotation"
+msgstr ""
+
+#. module: updater_purchase
+#: code:addons/updater_purchase/models/purchase_order.py:0
+#: model:ir.model.fields,field_description:updater_purchase.field_purchase_order__order_title
+#, python-format
+msgid "Title of the order"
+msgstr ""
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_din5008_much
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchasequotation_document_din5008_much
+msgid "VAT:"
+msgstr ""

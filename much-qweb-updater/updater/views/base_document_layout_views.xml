@@ -1,0 +1,50 @@
+<odoo>
+    <data>
+        <record id="updater_config" model="ir.ui.view">
+            <field name="name">much. Document Layout</field>
+            <field name="model">base.document.layout</field>
+            <field name="priority" eval="30"/>
+            <field name="inherit_id" ref="web.view_base_document_layout"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='paperformat_id']"
+                       position="after">
+                    <field name="much_tmpl" invisible="1"/>
+                    <field name="much_layout_style" widget="radio"
+                           string=" Much Layout Style"
+                           attrs="{'invisible': [('much_tmpl', '=', False)]}"/>
+                    <field name="logo_position" widget="radio"
+                           string="Logo Position"
+                           attrs="{'invisible': [('much_tmpl', '=', False)]}"/>
+                    <field name="header_address_position" widget="radio"
+                           string="Header Address Position"
+                           attrs="{'invisible': [('much_tmpl', '=', False)]}"/>
+                    <field name="no_of_bank_accounts" widget="radio"
+                           string="Bank Accounts:"
+                           attrs="{'invisible': [('much_tmpl', '=', False)]}"/>
+                </xpath>
+                <xpath expr="//field[@name='logo']"
+                       position="after">
+                    <label for="logo_width" string="Logo Width"
+                           attrs="{'invisible': [('much_tmpl', '=', False)]}"/>
+                    <div class="d-flex"
+                         attrs="{'invisible': [('much_tmpl', '=', False)]}">
+                        <field name="logo_width"/>
+                        <field name="logo_width_unit"
+                               attrs="{'required': [('logo_width', '!=', False)]}"/>
+                    </div>
+                    <label for="logo_height" string="Logo Height"
+                           attrs="{'invisible': [('much_tmpl', '=', False)]}"/>
+                    <div class="d-flex"
+                         attrs="{'invisible': [('much_tmpl', '=', False)]}">
+                        <field name="logo_height"/>
+                        <field name="logo_height_unit"
+                               attrs="{'required': [('logo_height', '!=', False)]}"/>
+                    </div>
+                </xpath>
+                <xpath expr="//field[@name='company_details']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

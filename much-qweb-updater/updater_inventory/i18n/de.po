@@ -1,0 +1,124 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* updater_inventory
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-08 04:25+0000\n"
+"PO-Revision-Date: 2022-07-08 04:25+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: updater_inventory
+#: model_terms:ir.ui.view,arch_db:updater_inventory.report_delivery_document_din5008_much
+msgid "<b>Delivery Address:</b>"
+msgstr "<b>Lieferadresse:</b>"
+
+#. module: updater_inventory
+#: model_terms:ir.ui.view,arch_db:updater_inventory.report_delivery_document_din5008_much
+msgid "<b>Warehouse Address:</b>"
+msgstr "<b>Lagerhausadresse:</b>"
+
+#. module: updater_inventory
+#: model_terms:ir.ui.view,arch_db:updater_inventory.report_delivery_document_din5008_much
+msgid ""
+"<span>\n"
+"                                            <strong>Customer Address:</strong>\n"
+"                                        </span>"
+msgstr ""
+"<span>\n"
+"                                            <strong>Kundenadresse:</strong>\n"
+"                                        </span>"
+
+#. module: updater_inventory
+#: model_terms:ir.ui.view,arch_db:updater_inventory.report_delivery_document_din5008_much
+msgid ""
+"<span>\n"
+"                                            <strong>Vendor Address:</strong>\n"
+"                                        </span>"
+msgstr ""
+"<span>\n"
+"                                            <strong>Lieferantenadresse:</strong>\n"
+"                                        </span>"
+
+#. module: updater_inventory
+#: model_terms:ir.ui.view,arch_db:updater_inventory.report_delivery_document_din5008_much
+msgid ""
+"<span>\n"
+"                                            <strong>Warehouse Address:</strong>\n"
+"                                        </span>"
+msgstr ""
+"<span>\n"
+"                                            <strong>Lagerhausadresse:</strong>\n"
+"                                        </span>"
+
+#. module: updater_inventory
+#: model_terms:ir.ui.view,arch_db:updater_inventory.report_delivery_document_din5008_much
+msgid "<span>Delivered</span>"
+msgstr "<span>Geliefert</span>"
+
+#. module: updater_inventory
+#: model_terms:ir.ui.view,arch_db:updater_inventory.report_delivery_document_din5008_much
+msgid "<span>Ordered</span>"
+msgstr "<span>Bestellt</span>"
+
+#. module: updater_inventory
+#: model_terms:ir.ui.view,arch_db:updater_inventory.report_delivery_document_din5008_much
+msgid "<span>Product</span>"
+msgstr "<span>Produkt</span>"
+
+#. module: updater_inventory
+#: model_terms:ir.ui.view,arch_db:updater_inventory.report_delivery_document_din5008_much
+msgid "<span>Remaining quantities not yet delivered:</span>"
+msgstr "<span>Verbleibende Menge noch nicht geliefert:</span>"
+
+#. module: updater_inventory
+#: model_terms:ir.ui.view,arch_db:updater_inventory.report_delivery_document_din5008_much
+msgid "<strong>Delivered</strong>"
+msgstr "<strong>Geliefert</strong>"
+
+#. module: updater_inventory
+#: model_terms:ir.ui.view,arch_db:updater_inventory.report_delivery_document_din5008_much
+msgid "<strong>Order:</strong>"
+msgstr "<strong>Auftrag:</strong>"
+
+#. module: updater_inventory
+#: model_terms:ir.ui.view,arch_db:updater_inventory.report_delivery_document_din5008_much
+msgid "<strong>Ordered</strong>"
+msgstr "<strong>Bestellt</strong>"
+
+#. module: updater_inventory
+#: model_terms:ir.ui.view,arch_db:updater_inventory.report_delivery_document_din5008_much
+msgid "<strong>Product</strong>"
+msgstr "<strong>Produkt</strong>"
+
+#. module: updater_inventory
+#: model_terms:ir.ui.view,arch_db:updater_inventory.report_delivery_document_din5008_much
+msgid "<strong>Quantity</strong>"
+msgstr "<strong>Menge</strong>"
+
+#. module: updater_inventory
+#: model_terms:ir.ui.view,arch_db:updater_inventory.report_delivery_document_din5008_much
+msgid "<strong>Shipping Date:</strong>"
+msgstr "<strong>Versanddatum:</strong>"
+
+#. module: updater_inventory
+#: model_terms:ir.ui.view,arch_db:updater_inventory.report_delivery_document_din5008_much
+msgid "<strong>Signature</strong>"
+msgstr "<strong>Unterschrift</strong>"
+
+#. module: updater_inventory
+#: model_terms:ir.ui.view,arch_db:updater_inventory.report_delivery_document_din5008_much
+msgid "Lot/Serial Number"
+msgstr "Los-/Seriennummer"
+
+#. module: updater_inventory
+#: model_terms:ir.ui.view,arch_db:updater_inventory.report_delivery_document_din5008_much
+msgid "Pos"
+msgstr ""

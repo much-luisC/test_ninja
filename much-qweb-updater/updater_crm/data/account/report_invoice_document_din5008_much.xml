@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<odoo>
+    <template id="report_invoice_document_much_crm_custom_din5008"
+              inherit_id="updater_account.report_invoice_document_din5008_much">
+        <xpath expr="//div[hasclass('page')]//div[@name='comment']" position="before">
+            <div class="mb-2" t-if="o.team_id and o.team_id.report_text">
+                <span t-esc="o.team_id.report_text"/>
+            </div>
+        </xpath>
+    </template>
+</odoo>

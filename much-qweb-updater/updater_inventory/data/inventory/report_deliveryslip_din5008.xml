@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="report_deliveryslip_much_custom_din5008"  inherit_id="stock.report_deliveryslip">
+    <xpath expr="/t" position="replace">
+      <t t-name="stock.report_deliveryslip">
+        <t t-call="web.html_container">
+          <t t-foreach="docs" t-as="o">
+            <t t-set="report" t-value="o.sudo().company_id.external_report_layout_id.name.split('_')[-1] if o.sudo().company_id.external_report_layout_id and o.sudo().company_id.external_report_layout_id.name.split('_')[-1] not in ['background', 'boxed', 'clean', 'standard', 'document', 'din5008'] else ''" />
+            <t t-if="report != ''" t-call="updater_inventory.report_delivery_document_din5008_{{report}}"
+               t-lang="o.partner_id.lang" />
+            <t t-else="" t-call="stock.report_delivery_document" t-lang="o.partner_id.lang" />
+          </t>
+        </t>
+      </t>
+    </xpath>
+  </template>
+</odoo>
