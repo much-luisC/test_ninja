@@ -1,0 +1,283 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="report_purchasequotation_document_din5008_much" model="ir.ui.view">
+        <field name="name">report_purchasequotation_document_din5008_much</field>
+        <field name="type">qweb</field>
+        <field name="arch" type="xml">
+            <t t-name="updater_purchase.report_purchasequotation_document_din5008_much">
+                <t t-call="web.external_layout">
+                    <t t-set="o" t-value="o.with_context(lang=o.partner_id.lang)"/>
+                    <t t-set="font" t-value="o.company_id.font or 'Lato'"/>
+                    <t t-set="primary"
+                       t-value="o.company_id.primary_color or '#ea5747'"/>
+                    <t t-set="secondary"
+                       t-value="o.company_id.secondary_color or '#ffffff'"/>
+
+                    <style type="text/css">
+                        .terms a{
+                        color:<t t-esc="primary"/>!important;
+                        }
+                    </style>
+                    <t t-set="address">
+                        <address style="display:none;"/>
+                    </t>
+
+                    <div class="row" style="font-size: 12px;">
+                        <div class="col-6 text-left" style="padding-top: 10px;">
+                            <t t-if="o.partner_id.parent_id">
+                                <p class="text-left" style="margin:0;">
+                                    <t t-esc="o.partner_id.parent_id.name"/>
+                                </p>
+                            </t>
+                            <p class="text-left" style="margin:0;">
+                                <span t-field="o.partner_id.name"/>
+                            </p>
+                            <p class="text-left" style="margin:0;">
+                                <span t-field="o.partner_id.street"/>
+                            </p>
+                            <p t-if="o.partner_id.street2" class="text-left"
+                               style="margin:0;">
+                                <span t-field="o.partner_id.street2"/>
+                            </p>
+                            <p class="text-left" style="margin:0;">
+                                <span t-field="o.partner_id.zip"/>
+                                <span t-field="o.partner_id.city"/>
+                            </p>
+                            <p t-if="o.partner_id.country_id" class="text-left"
+                               style="margin:0;">
+                                <span t-field="o.partner_id.country_id.name"/>
+                            </p>
+                            <p t-if="o.partner_id.phone" class="text-left"
+                               style="margin:0;">
+                                <i class="fa fa-phone"></i>&#160;
+                                <span t-field="o.partner_id.phone"/>
+                            </p>
+                            <p t-if="o.partner_id.vat" class="text-left"
+                               style="margin:0;">
+                                VAT:
+                                <span t-field="o.partner_id.vat"/>
+                            </p>
+                        </div>
+                        <div class="col-6 text-right">
+                            <div class="row">
+                                <div class="col-6">
+                                    <p t-if="o.name" class="text-left text-nowrap"
+                                       style="margin:0;">
+                                        Purchase Order No.
+                                    </p>
+                                </div>
+                                <div class="col-6">
+                                    <p t-if="o.name" class="text-left"
+                                       style="margin:0;">
+                                        <span t-field="o.name"/>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p t-if="o.user_id.name" class="text-left"
+                                       style="margin:0;">
+                                        Purchase Representative
+                                    </p>
+                                </div>
+                                <div class="col-6">
+                                    <p t-if="o.user_id.name" class="text-left"
+                                       style="margin:0;">
+                                        <span t-field="o.user_id.name"/>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p t-if="o.partner_ref" class="text-left"
+                                       style="margin:0;">
+                                        Order Reference
+                                    </p>
+                                </div>
+                                <div class="col-6">
+                                    <p t-if="o.partner_ref" class="text-left"
+                                       style="margin:0;">
+                                        <span t-field="o.partner_ref"/>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p t-if="o.date_order" class="text-left text-nowrap"
+                                       style="margin:0;">
+                                        Order Date
+                                    </p>
+                                </div>
+                                <div class="col-6">
+                                    <p t-if="o.date_order" class="text-left"
+                                       style="margin:0;">
+                                        <span t-esc="o.date_order"
+                                              t-options="{'widget': 'date'}"/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-top: 30px;font-size: 12px;">
+                        <div class="col-6">
+                            <div class="text-left">
+                                <p class="text-left" style="margin:0;">
+                                    <b>Shipping Address:</b>
+                                </p>
+                                <t t-if="o.dest_address_id">
+                                    <t t-if="o.dest_address_id.parent_id">
+                                        <p class="text-left" style="margin:0;">
+                                            <t t-esc="o.partner_id.parent_id.name"/>
+                                        </p>
+                                    </t>
+                                    <t t-elif="o.dest_address_id.company_name">
+                                        <p class="text-left" style="margin:0;">
+                                            <t t-esc="o.partner_id.company_name"/>
+                                        </p>
+                                    </t>
+                                    <p class="text-left" style="margin:0;">
+                                        <t t-esc="o.dest_address_id.name"/>
+                                    </p>
+                                    <p class="text-left" style="margin:0;">
+                                        <t t-if="o.dest_address_id.street"
+                                           t-esc="o.dest_address_id.street"/>
+                                    </p>
+                                    <p class="text-left" style="margin:0;">
+                                        <t t-if="o.dest_address_id.zip"
+                                           t-esc="o.dest_address_id.zip"/>
+                                        <t t-if="o.dest_address_id.city"
+                                           t-esc="o.dest_address_id.city"/>
+                                    </p>
+                                    <p class="text-left" style="margin:0;">
+                                        <t t-if="o.dest_address_id.country_id"
+                                           t-esc="o.dest_address_id.country_id.display_name"/>
+                                    </p>
+                                    <p t-if="o.dest_address_id.phone" class="text-left"
+                                       style="margin:0;">
+                                        <span t-field="o.dest_address_id.phone"/>
+                                    </p>
+                                </t>
+                                <t t-else="">
+                                    <div t-if="o.picking_type_id and o.picking_type_id.warehouse_id">
+                                        <p class="text-left" style="margin:0;">
+                                            <t t-esc="o.picking_type_id.warehouse_id.name"/>
+                                        </p>
+                                        <p class="text-left" style="margin:0;">
+                                            <t t-if="o.picking_type_id.warehouse_id.partner_id.street"
+                                               t-esc="o.picking_type_id.warehouse_id.partner_id.street"/>
+                                        </p>
+                                        <p class="text-left" style="margin:0;">
+                                            <t t-if="o.picking_type_id.warehouse_id.partner_id.zip"
+                                               t-esc="o.picking_type_id.warehouse_id.partner_id.zip"/>
+                                            <t t-if="o.picking_type_id.warehouse_id.partner_id.city"
+                                               t-esc="o.picking_type_id.warehouse_id.partner_id.city"/>
+                                        </p>
+                                        <p class="text-left" style="margin:0;">
+                                            <t t-if="o.picking_type_id.warehouse_id.partner_id.country_id"
+                                               t-esc="o.picking_type_id.warehouse_id.partner_id.display_name"/>
+                                        </p>
+                                        <p t-if="o.picking_type_id.warehouse_id.partner_id.phone"
+                                           class="text-left" style="margin:0;">
+                                            <span t-field="o.picking_type_id.warehouse_id.partner_id.phone"/>
+                                        </p>
+                                    </div>
+                                </t>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page" style="margin-top: 30px; font-size: 12px;">
+                        <div class="oe_structure"/>
+
+                        <h5 style="font-weight: bold;">
+                            Request for Quotation
+                            <span t-field="o.name"/>
+                            <t t-if="o.order_title">
+                                -
+                                <span t-field="o.order_title"/>
+                            </t>
+                        </h5>
+                        <span t-field="o.report_header_text"/>
+                        <table class="table table-sm o_main_table"
+                               style="margin-top:30px; margin-bottom: 0.3em !important;">
+                            <thead
+                                    t-att-style="(o.company_id.much_layout_style == 'colorful') and 'color: %s; background-color: %s;' % (secondary ,primary) or 'color: #535353;'">
+                                <tr>
+                                    <th name="th_postion" class="text-left py-2"
+                                        style="border-top:none !important; border-bottom:none !important;">
+                                        <strong>Pos</strong>
+                                    </th>
+                                    <th name="th_description" class="text-left py-2"
+                                        style="border-top:none !important; border-bottom:none !important;">
+                                        <strong>Description</strong>
+                                    </th>
+                                    <th name="th_expected_date" class="text-center py-2"
+                                        style="border-top:none !important; border-bottom:none !important;">
+                                        <strong>Expected Date</strong>
+                                    </th>
+                                    <th name="th_quantity" class="text-right py-2"
+                                        style="border-top:none !important; border-bottom:none !important;">
+                                        <strong>Quantity</strong>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-set="count" t-value="1"/>
+                                <t t-foreach="o.order_line" t-as="line">
+                                    <tr t-att-style="'border-top: 1px solid #000000 !important; border-bottom: 1px solid #000000 !important;' if line.display_type in ['line_section'] and o.company_id.much_layout_style == 'bw' else 'background-color: #e9ecef;' if line.display_type in ['line_section'] and o.company_id.much_layout_style in ['colorful','slick'] else ''"
+                                        t-att-class="'font-weight-bold o_line_section' if line.display_type == 'line_section' else 'font-italic o_line_note' if line.display_type == 'line_note' else ''">
+                                        <t t-if="not line.display_type">
+                                            <td name="td_pos" class="text-left py-2"
+                                                style="border:none !important;">
+                                                <span t-esc="count"/>
+                                            </td>
+                                            <td id="product" name="td_name"
+                                                class="text-left py-2"
+                                                style="border:none !important;">
+                                                <span t-field="line.name"/>
+                                            </td>
+                                            <td name="td_date" class="text-center py-2"
+                                                style="border:none !important;">
+                                                <span t-field="line.date_planned"
+                                                      t-options="{'widget': 'datetime'}"/>
+                                            </td>
+                                            <td class="text-right py-2"
+                                                style="border:none !important;">
+                                                <span t-field="line.product_qty"/>
+                                                <span t-field="line.product_uom"
+                                                      groups="uom.group_uom"/>
+                                            </td>
+                                        </t>
+                                        <t t-if="line.display_type == 'line_section'">
+                                            <td colspan="99" id="section" class="py-2"
+                                                style="border: none !important;">
+                                                <span t-field="line.name"
+                                                      t-options="{'widget': 'text'}"/>
+                                            </td>
+                                        </t>
+                                        <t t-if="line.display_type == 'line_note'">
+                                            <td name="td_pos" class="text-left py-2"
+                                                style="border:none !important;">
+                                                <span>&#160;</span>
+                                            </td>
+                                            <td colspan="99" id="note" class="py-2"
+                                                style="border: none !important;">
+                                                <span t-field="line.name"
+                                                      t-options="{'widget': 'text'}"/>
+                                            </td>
+                                        </t>
+                                        <t t-if="line.display_type not in ['line_section', 'line_note']"
+                                           t-set="count" t-value="count+1"/>
+                                    </tr>
+                                </t>
+                            </tbody>
+                        </table>
+
+                        <span class="terms" t-field="o.notes"/>
+
+                        <div class="oe_structure"/>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+</odoo>

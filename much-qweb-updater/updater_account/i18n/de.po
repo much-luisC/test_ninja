@@ -1,0 +1,194 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* updater_account
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-11 05:06+0000\n"
+"PO-Revision-Date: 2022-10-11 05:06+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_din5008_much
+msgid ""
+"<span>\n"
+"                                                    <strong>Total</strong>\n"
+"                                                </span>"
+msgstr ""
+"<span>\n"
+"                                                    <strong>Gesamt</strong>\n"
+"                                                </span>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_din5008_much
+msgid "<span>Amount</span>"
+msgstr "<span>Betrag</span>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_din5008_much
+msgid "<span>Description</span>"
+msgstr "<span>Beschreibung</span>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_din5008_much
+msgid "<span>Disc. %</span>"
+msgstr "<span>Rab. %</span>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_din5008_much
+msgid "<span>Quantity</span>"
+msgstr "<span>Menge</span>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_din5008_much
+msgid "<span>Subtotal Net</span>"
+msgstr "<span>Zwischensumme Netto</span>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_din5008_much
+msgid "<span>Taxes</span>"
+msgstr "<span>Steuern</span>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_din5008_much
+msgid "<span>Unit Price</span>"
+msgstr "<span>Einzelpreis</span>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_din5008_much
+msgid "<strong class=\"mr16\">Subtotal</strong>"
+msgstr "<strong class=\"mr16\">Zwischensumme</strong>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_din5008_much
+msgid ""
+"<strong class=\"text-center\">Scan me with your\n"
+"                                            banking app.\n"
+"                                        </strong>\n"
+"                                        <br/>\n"
+"                                        <br/>"
+msgstr ""
+"<strong class=\"text-center\">Scanne mich mit deiner\n"
+"                                        Banking-App.\n"
+"                                    </strong>\n"
+"                                    <br/>\n"
+"                                    <br/>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_with_payments_din5008_much
+msgid "<strong id=\"amount_residual_label\">Amount Due</strong>"
+msgstr "<strong id=\"amount_residual_label\">Fälliger Betrag</strong>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.view_move_form_much_din5008
+msgid "Add a description before table..."
+msgstr "Beschreibung vor der Tabelle hinzufügen..."
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_din5008_much
+msgid "Cancelled Invoice"
+msgstr "Stornierte Rechnung"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_din5008_much
+msgid "Credit Note"
+msgstr "Gutschrift"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_din5008_much
+msgid "Customer Reference"
+msgstr "Ihre Referenz"
+
+#. module: updater_account
+#: code:addons/updater_account/models/account_move.py:0
+#: model:ir.model.fields,field_description:updater_account.field_account_bank_statement_line__report_header_text
+#: model:ir.model.fields,field_description:updater_account.field_account_move__report_header_text
+#: model:ir.model.fields,field_description:updater_account.field_account_payment__report_header_text
+#, python-format
+msgid "Description before Table"
+msgstr "Beschreibung vor Tabelle"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_din5008_much
+msgid "Draft Invoice"
+msgstr "Rechnungsentwurf"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_din5008_much
+msgid "Due Date"
+msgstr "Fälligkeitsdatum"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_din5008_much
+msgid "Invoice"
+msgstr "Rechnung"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_din5008_much
+msgid "Invoice Date"
+msgstr "Rechnungsdatum"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_din5008_much
+msgid "Invoice No."
+msgstr "Rechnungs Nr."
+
+#. module: updater_account
+#: model:ir.model,name:updater_account.model_account_move
+msgid "Journal Entry"
+msgstr "Buchungssatz"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_with_payments_din5008_much
+msgid "Paid on"
+msgstr "Bezahlt am"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_din5008_much
+msgid ""
+"Please use the following communication for your\n"
+"                                    payment:"
+msgstr ""
+"Bitte geben Sie folgenden Verwendungszweck\n"
+"                                    an:"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_din5008_much
+msgid "Pos."
+msgstr ""
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_din5008_much
+msgid "Source"
+msgstr "Auftragsnummer"
+
+#. module: updater_account
+#: code:addons/updater_account/models/account_move.py:0
+#: model:ir.model.fields,field_description:updater_account.field_account_bank_statement_line__order_title
+#: model:ir.model.fields,field_description:updater_account.field_account_move__order_title
+#: model:ir.model.fields,field_description:updater_account.field_account_payment__order_title
+#, python-format
+msgid "Title of the order"
+msgstr "Titel des Auftrages"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_din5008_much
+msgid "VAT:"
+msgstr "UST:"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_din5008_much
+msgid "Vendor Bill"
+msgstr "Lieferantenrechnung"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_din5008_much
+msgid "Vendor Credit Note"
+msgstr "Lieferantengutschrift"
